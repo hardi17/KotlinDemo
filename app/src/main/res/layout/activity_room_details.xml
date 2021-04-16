@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RoomDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_heroImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_background" />
+
+
+                <ProgressBar
+                    android:id="@+id/pgb_roomDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Name :"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvNameMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/purple_700"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCapacityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Capacity :"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvCapacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/purple_700"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLocTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Location :"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/purple_700"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvFeatures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Features :"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/features_rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/tv_feature_noData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:text="No Data Found"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/pgb_feature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Services :"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/service_rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/tv_service_noData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:text="No Data Found"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/pgb_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvfacilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Facilities :"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/facilities_rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/tv_facilities_noData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:text="No Data Found"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/pgb_facilities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvEquipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/black"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="Equipment :"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/euipment_rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/tv_equi_noData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="8dp"
+                        android:text="No Data Found"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/pgb_euipment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

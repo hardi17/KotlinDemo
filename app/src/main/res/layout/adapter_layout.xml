@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:layout_marginBottom="2dp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name : "
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_subIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/purple_700"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCapacityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capacity : "
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvCapacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/purple_700"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+    </LinearLayout>
+</layout>
