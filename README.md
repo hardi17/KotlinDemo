@@ -14,6 +14,6 @@ Hardi Rachh
 
 You can connect with me on:
 
-- Github : https://www.linkedin.com/in/hardi-r/
+- LinkedIn : https://www.linkedin.com/in/hardi-r/
 
 
