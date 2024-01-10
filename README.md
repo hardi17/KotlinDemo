@@ -15,5 +15,6 @@ Hardi Rachh
 You can connect with me on:
 
 - LinkedIn : https://www.linkedin.com/in/hardi-r/
+- Medium : https://hardirachh.medium.com/
 
 
